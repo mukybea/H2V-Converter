@@ -17,8 +17,8 @@ The H2VConverter is a tool that converts horizontal videos into a vertical forma
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone git@github.com:mukybea/H2V-Converter.git
+    cd H2V-Converter
     ```
 
 2.  **Create a virtual environment (recommended):**
