@@ -1,4 +1,5 @@
-opencv-python-headless
+ffmpeg-python
+opencv-python
 numpy
 pandas
 scenedetect
