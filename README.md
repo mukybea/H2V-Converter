@@ -14,6 +14,8 @@ The H2VConverter is a tool that converts horizontal videos into a vertical forma
 
 ## Installation
 
+Quick note: Due to version compatibility with MediaPipe installation a Python 3.11 was used.
+
 1.  **Clone the repository:**
 
     ```bash
@@ -24,9 +26,8 @@ The H2VConverter is a tool that converts horizontal videos into a vertical forma
 2.  **Create a virtual environment (recommended):**
 
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Linux/macOS
-    venv\Scripts\activate  # On Windows
+    conda create -n myenv python=3.11
+    conda activate myenv
     ```
 
 3.  **Install the Python dependencies:**
@@ -53,7 +54,7 @@ Example:
 python h2v_converter.py input.mp4 --output-dir output_videos --ratio 9:16 --model_size base
 ```
 
-Output:
+### Output:
 
 The code generates two output files: 
 1. `final_vertical.mp4` (the output vertical video)
@@ -63,7 +64,7 @@ The code generates two output files:
 - main.py
   - H2VConverter
     - \_\_init\_\_ _Initializes the converter, loads models, and sets up video capture_
-    - calculate\_target\_dimensions: _compute the dimensions of the output vertical video_
+    - calculate_target_dimensions: _compute the dimensions of the output vertical video_
     - detect_scenes: _detects scene changes in the input video_
     - extract_audio: _extracts the audio track from the given video_
       - detect_speech_segments: _detects speech segments in the audio track_
