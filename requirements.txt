@@ -2,8 +2,8 @@ opencv-python-headless
 numpy
 pandas
 scenedetect
-openai-whisper
+git+https://github.com/openai/whisper.git 
 ultralytics
-mediapipe 
+mediapipe
 tqdm
-numba==0.56.2
+numba
